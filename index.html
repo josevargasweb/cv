@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        font-family: "Kumbh Sans", sans-serif;
+      }
+
+      body {
+        background: hsl(185, 75%, 39%);
+        background-image: url("images/bg-pattern-bottom.svg"),
+          url("images/bg-pattern-top.svg");
+        background-repeat: no-repeat, no-repeat;
+        background-position: left 50vw top 50vh, right 50vw bottom 50vh;
+      }
+
+      .card {
+        position: relative;
+        width: 350px;
+        text-align: center;
+        padding-top: 100px;
+        border-radius: 15px;
+        background: url("images/bg-pattern-card.svg");
+        background-repeat: no-repeat;
+      }
+
+      h3 {
+        font-size: 18px;
+        margin-bottom: 0;
+      }
+
+      h3 span {
+        font-weight: 400;
+        color: hsl(0, 0%, 59%);
+      }
+
+      p {
+        color: hsl(0, 0%, 59%);
+      }
+
+      hr {
+        height: 1px;
+        background-color: rgba(211, 211, 211, 0.605);
+        border: none;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      .body-card img {
+        background-color: white;
+        position: absolute;
+        border-radius: 50px;
+        top: 95px;
+        left: 125px;
+        border: 5px solid white;
+      }
+
+      .body-card {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: white;
+        min-height: 250px;
+        margin-top: 40px;
+      }
+
+      .user-info {
+        padding-top: 70px;
+        padding-bottom: 10px;
+      }
+
+      .stats {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        padding-bottom: 5px;
+      }
+
+      .stats .stat p {
+        margin-top: 5px;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: hsl(0, 0%, 70%);
+      }
+
+      .clearfix {
+        overflow: auto;
+      }
+
+      @media screen and (min-width: 427px) {
+        .card {
+          margin: 15% auto;
+        }
+      }
+
+      @media screen and (max-width: 427px) {
+        .card {
+          margin: 50% auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="body-card">
+        <img src="images/image-victor.jpg" alt="victor-photo" />
+
+        <div class="user-info">
+          <h3>Victor Crest <span>26</span></h3>
+          <p>London</p>
+        </div>
+
+        <hr />
+
+        <div class="stats">
+          <div class="stat">
+            <h3>80K</h3>
+            <p>Followers</p>
+          </div>
+
+          <div class="stat">
+            <h3>803K</h3>
+            <p>Likes</p>
+          </div>
+
+          <div class="stat">
+            <h3>1.4K</h3>
+            <p>Photos</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">José Vargas</a>.
+    </div>
+  </body>
+</html>
